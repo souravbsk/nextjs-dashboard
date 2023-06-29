@@ -5,9 +5,6 @@ import loginImg from "@/assets/login/login.png";
 import Link from "next/link";
 import AuthContext from "@/contexts/AuthContext";
 import { useRouter, useSearchParams } from "next/navigation";
-export const metadata = {
-  title: "NeXt Dashboard - Login",
-};
 const LoginPage = () => {
   const {createUser,signIn,profileUpdate} = useContext(AuthContext);
   const [error,setError] = useState("");

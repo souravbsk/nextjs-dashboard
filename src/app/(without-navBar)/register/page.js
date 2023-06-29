@@ -5,9 +5,6 @@ import loginImg from "@/assets/login/login.png";
 
 import React, { useContext, useState } from "react";
 import AuthContext from "@/contexts/AuthContext";
-export const metadata = {
-    title: "NeXt Dashboard - Register",
-  };
 const RegisterPage = () => {
     const {createUser,signIn,profileUpdate} = useContext(AuthContext);
     const [error,setError] = useState("");
